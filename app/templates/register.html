@@ -1,0 +1,20 @@
+
+
+<div style="background-color: bisque; height:max-content">
+
+<center>
+     <div>
+        <form action="" method="POST" style="width: 300px; height:1000px;">
+            {% csrf_token %}
+
+            <br>
+            <h2>SignUp</h2>  <br><br>
+
+            {{form.as_p}} <br>
+            <button type="submit" class="btn btn-danger">SignUp</button>
+
+        </form>
+    </div>
+
+</center>
+</div>

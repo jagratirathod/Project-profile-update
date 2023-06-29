@@ -1,0 +1,25 @@
+
+
+
+<!-- {% if messages %}
+{% for message in messages %}
+<div class="text-center alert alert-{{ message.tags }} alert-dismissible">
+    {{ message|safe }}
+</div>
+{% endfor %}
+{% endif %} -->
+
+<div style="background-color: bisque;" >
+    <center><br>
+        <h1 style="font:bold; color:blue">Login Here!</h1> <br><br>
+
+        <div>
+            <form method="POST" action="{% url 'app:login' %}" style="width:400px;">
+                {% csrf_token %}
+                {{form.as_p}} <br>
+                <button type="submit" class="btn btn-danger">Login</button>
+
+            </form>
+        </div>
+    </center>
+</div>
